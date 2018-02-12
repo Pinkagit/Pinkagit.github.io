@@ -265,12 +265,12 @@
     "dateModified": "Mon Feb 12 2018 11:58:02 GMT+0800",
     "author": {
         "@type": "Person",
-        "name": "John Doe",
+        "name": "Pinkagit",
         "image": {
             "@type": "ImageObject",
             "url": "/img/avatar.jpg"
         },
-        "description": "Hi, nice to meet you"
+        "description": "0 error(s), 0 warning(s)"
     },
     "publisher": {
         "@type": "Organization",
@@ -387,7 +387,7 @@
     </div>
     <!-- Author Name & Date -->
     <div>
-        <strong>John Doe</strong>
+        <strong>Pinkagit</strong>
         <span>2月 12, 2018</span>
     </div>
 
@@ -402,6 +402,18 @@
     -->
 
     <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://yoursite.com/2018/02/12/test/">
+    
+</ul>
+
     
 
     <!-- Tags (bookmark) -->
@@ -429,7 +441,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=test&url=http://yoursite.com/2018/02/12/test/index.html&via=John Doe" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=test&url=http://yoursite.com/2018/02/12/test/index.html&via=Pinkagit" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -536,7 +548,7 @@
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="/img/avatar.jpg" alt="John Doe's avatar">
+        <img src="/img/avatar.jpg" alt="Pinkagit's avatar">
     </div>
 
     <!-- Sidebar Email -->
@@ -725,6 +737,12 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Bilibili -->
     
+        <a href="https://space.bilibili.com/24830683/#/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
 
     <!-- Telegram -->
     
@@ -864,7 +882,7 @@ It will not impact the appearance and can give developers a lot of support :)
     var copyrightNow = new Date().getFullYear();
     var textContent = document.querySelector('span[year]')
 
-    copyrightSince = 2018-2019;
+    copyrightSince = 2018;
     if (copyrightSince === copyrightNow||copyrightSince === 0000) {
         textContent.textContent = copyrightNow
     } else {
